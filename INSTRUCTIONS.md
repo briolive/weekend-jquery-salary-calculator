@@ -7,6 +7,16 @@ Create an application that records employee salaries and adds salaries up to rep
 
 ## Assignment
 
+- [] Create input forms for first name, last name, ID number, job title, annual salary
+- [] Create 'submit' button
+- [] 'Submit' button stores the information collected
+- [] 'Submit' button clears the input fields
+- [] Using stored information, calculate monthly costs
+- [] Append monthly costs to the DOM
+- [] If total monthly cost > $20,000, add red background color to the total monthly cost
+- [] Create delete button
+- [] Delete button removes an employee from the DOM 
+
 The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_.
 
 A 'Submit' button should collect the form information, store the information to calculate monthly costs, append information to the DOM and clear the input fields. Using the stored information, calculate monthly costs and append this to the to DOM. If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
