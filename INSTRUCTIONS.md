@@ -7,9 +7,10 @@ Create an application that records employee salaries and adds salaries up to rep
 
 ## Assignment
 
-- [] Create input forms for first name, last name, ID number, job title, annual salary
-- [] Create 'submit' button
-- [] 'Submit' button stores the information collected
+- [x] Create input forms for first name, last name, ID number, job title, annual salary
+- [x] Create 'submit' button
+- [x] Create Employee table
+- [x] 'Submit' button stores the information collected and appends it to the DOM
 - [] 'Submit' button clears the input fields
 - [] Using stored information, calculate monthly costs
 - [] Append monthly costs to the DOM
