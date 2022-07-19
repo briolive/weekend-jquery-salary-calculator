@@ -11,7 +11,7 @@ Create an application that records employee salaries and adds salaries up to rep
 - [x] Create 'submit' button
 - [x] Create Employee table
 - [x] 'Submit' button stores the information collected and appends it to the DOM
-- [] 'Submit' button clears the input fields
+- [x] 'Submit' button clears the input fields
 - [] Using stored information, calculate monthly costs
 - [] Append monthly costs to the DOM
 - [] If total monthly cost > $20,000, add red background color to the total monthly cost
