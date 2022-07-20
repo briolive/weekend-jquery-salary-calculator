@@ -6,7 +6,7 @@ function readyNow(){
 }
 
 let monthlyCost = 0;
-let newCost = 0;
+// let newCost = 0;
 let annualSalary = 0;
 
 function addEmployee(){
@@ -35,9 +35,9 @@ function addEmployee(){
     </tr>
     `)
     // calculating monthly cost
-    newCost = monthlyCost + Number(annualSalary);
+    monthlyCost = monthlyCost + Number(annualSalary) / 12
     console.log('annualSalary:', annualSalary)
-    console.log('newCost:', newCost)
+    console.log('newCost:', monthlyCost)
     calculateMonthlyCost();
 }
 
@@ -46,6 +46,6 @@ function calculateMonthlyCost(){
     console.log('in calculateMonthlyCost');
     let el = $('#monthlyCost');
     el.empty();
-    el.append(newCost);
-    console.log('newCost:', newCost);
+    el.append(monthlyCost);
+    console.log('newCost:', monthlyCost);
 }
