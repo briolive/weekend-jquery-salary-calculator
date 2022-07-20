@@ -31,6 +31,7 @@ function addEmployee(){
     <td>${idNumber}</td>
     <td>${jobTitle}</td>
     <td>${annualSalary}</td>
+    <td><button id="deleteBtn">Delete</button>
     </tr>
     `)
     // calculating monthly cost
