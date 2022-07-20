@@ -1,11 +1,13 @@
 $(document).ready(readyNow);
 
-let monthlyCost = 0;
-
 function readyNow(){
     console.log('ready!');
     $('#submitInfo').on('click', addEmployee)
 }
+
+let monthlyCost = 0;
+let newCost = 0;
+let annualSalary = 0;
 
 function addEmployee(){
     console.log('in addEmployee');
@@ -14,7 +16,8 @@ function addEmployee(){
     let lastName = $('#last-name-input').val();
     let idNumber = $('#id-number-input').val();
     let jobTitle = $('#job-title-input').val();
-    let annualSalary = $('#annual-salary-input').val();
+    annualSalary = $('#annual-salary-input').val();
+    console.log('annualSalary', annualSalary);
     // clearing inputs
     $('#first-name-input').val('');
     $('#last-name-input').val('');
@@ -32,13 +35,17 @@ function addEmployee(){
     </tr>
     `)
     // calculating monthly cost
+    newCost = monthlyCost + Number(annualSalary);
+    console.log('annualSalary:', annualSalary)
+    console.log('newCost:', newCost)
     calculateMonthlyCost();
-    // monthlyCost = Number(monthlyCost) + Number(annualSalary);
 }
 
 
 function calculateMonthlyCost(){
     console.log('in calculateMonthlyCost');
     let el = $('#monthlyCost');
-    el.append(monthlyCost)
+    el.empty();
+    el.append(newCost);
+    console.log('newCost:', newCost);
 }
