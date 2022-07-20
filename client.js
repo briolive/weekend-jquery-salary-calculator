@@ -6,7 +6,6 @@ function readyNow(){
 }
 
 let monthlyCost = 0;
-// let newCost = 0;
 let annualSalary = 0;
 
 function addEmployee(){
@@ -37,15 +36,20 @@ function addEmployee(){
     // calculating monthly cost
     monthlyCost = monthlyCost + Number(annualSalary) / 12
     console.log('annualSalary:', annualSalary)
-    console.log('newCost:', monthlyCost)
-    calculateMonthlyCost();
+    console.log('monthlyCost:', monthlyCost)
+    // updating monthly cost
+    updateMonthlyCost();
 }
 
 
-function calculateMonthlyCost(){
-    console.log('in calculateMonthlyCost');
+function updateMonthlyCost(){
+    console.log('in updateMonthlyCost');
     let el = $('#monthlyCost');
     el.empty();
     el.append(monthlyCost);
-    console.log('newCost:', monthlyCost);
+    console.log('monthlyCost:', monthlyCost);
+    if(monthlyCost > 20000){
+        console.log('in if loop');
+        $('#monthlyCost').css('background-color', 'red')
+    }
 }
