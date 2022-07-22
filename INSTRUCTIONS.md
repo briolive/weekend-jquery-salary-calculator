@@ -15,7 +15,7 @@ Create an application that records employee salaries and adds salaries up to rep
 - [x] Using stored information, calculate monthly costs
 - [x] Append monthly costs to the DOM
 - [x] If total monthly cost > $20,000, add red background color to the total monthly cost
-- [] Create delete button
+- [x] Create delete button
 - [] Delete button removes an employee from the DOM 
 
 The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_.

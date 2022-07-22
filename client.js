@@ -2,7 +2,9 @@ $(document).ready(readyNow);
 
 function readyNow(){
     console.log('ready!');
-    $('#submitInfo').on('click', addEmployee)
+    $('#submitInfo').on('click', addEmployee);
+    $('#deleteBtn').on('click', deleteEmployee);
+    // $('#employees').delegate('#deleteBtn', 'click', deleteEmployee);
 }
 
 let monthlyCost = 0;
@@ -53,4 +55,11 @@ function updateMonthlyCost(){
         console.log('in if loop');
         $('#monthlyCost').css('background-color', 'red')
     }
+}
+
+
+// to delete employee
+function deleteEmployee(){
+    console.log('in delete employee');
+    $(this).parent().parent().remove();
 }
